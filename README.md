@@ -25,4 +25,68 @@ Open terminal and execute below command
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
 
+------
+
+
+
+# Upgrade Jenkins on Ubuntu
+Follow below steps to upgrade Jenkins instance to latest
+
+### STOP Jenkins Service
+- sudo /etc/init.d/jenkins stop
+
+### Rename the Jenkins war file to war.old
+- cd /usr/share/jenkins
+- sudo mv jenkins.war jenkins.war.old
+  
+### Download latest war file
+- sudo wget https://updates.jenkins-ci.org/latest/jenkins.war
+
+### START Jenkins Service
+- sudo /etc/init.d/jenkins start
+
+
+-----
+
+
+# Git commands
+
+### Clone a git repo
+- git clone <git url>
+
+### Create a new branch
+- git branch <branch name>
+
+### Switch branch
+- git checkout <branch name>
+
+### Create and switch branch
+- git checkout -b <branch name>
+
+### Push the newly created branch to the remote 
+- git push -u origin <branch name>
+
+### Push change to remote branch
+- git push
+
+### Pull change to remote branch
+- git pull
+
+### Commit the change to the local branch
+- git commit -m "Comment here"
+
+### Adding a file to the stage area or index
+- git add filename
+
+### Remove a file to the stage area or index
+- git rm --cached filename
+
+### Remove all the uncommitted changes 
+- git reset --hard
+
+
+
+
+
+
 
